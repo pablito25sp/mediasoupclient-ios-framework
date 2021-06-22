@@ -1,6 +1,6 @@
-# Mediasoup client v3 iOS client arm64 binary
+# Mediasoup client v3 iOS client arm64/x86_64 binary
 
-This is mediasoupclient v3 iOS framework in XCFramework format for iOS arm64.
+This is mediasoupclient v3 iOS framework in XCFramework format for iOS arm64/x86_64.
 
 Get source code of Objective-C wrapper library for libmediasoupclient for building mediasoup iOS based applications from:
 
@@ -17,9 +17,8 @@ Get source code of Objective-C wrapper library for libmediasoupclient for buildi
 
 ## Manual Installation
 
-### Swift Package Manager 
+### Swift Package Manager
 
 Requires Swift 5.3 / Xcode 12+.
 
 Add WebRTC repository https://github.com/pablito25sp/mediasoupclient-ios-framework.git via Swift Package Manager.
-  
