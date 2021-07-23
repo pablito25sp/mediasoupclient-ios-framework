@@ -15,6 +15,12 @@ Get source code of Objective-C wrapper library for libmediasoupclient for buildi
 
 * [mediasoup.discourse.group](https://mediasoup.discourse.group/)
 
+## Build
+
+```xcodebuild -create-xcframework -framework ~/workspace/mediasoup-ios-client/build/Build/Products/Release-iphoneos/mediasoup_client_ios.framework/ -framework ~/workspace/mediasoup-ios-client/build/Build/Products/Release-iphonesimulator/mediasoup_client_ios.framework/ -output "MediasoupClientIOS.xcframework"```
+
+Note: replace ```~/workspace/mediasoup-ios-client/``` with the path you have your mediasoup_client_ios library source code.
+
 ## Manual Installation
 
 ### Swift Package Manager

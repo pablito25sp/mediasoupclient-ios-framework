@@ -14,6 +14,10 @@
 #ifndef MediasoupDevice_h
 #define MediasoupDevice_h
 
+enum {
+  NativeDeviceDisposedError = 1
+};
+
 @interface MediasoupDevice : NSObject
 /*! @brief libmediasoupclient native device object */
 @property(nonatomic, strong) NSValue* _nativeDevice;
@@ -30,30 +34,30 @@
     @discussion This method takes the RTP capabilities of the mediasoup router and works out what media codecs to use etc.
     @param routerRtpCapabilities mediasoup router RTP capabilities
  */
--(void)load:(NSString *)routerRtpCapabilities;
+-(bool)load:(NSString *)routerRtpCapabilities error:(NSError **)errPtr;
 /*!
     @brief Checks whether the device has been loaded
     @return Whether the device has been loaded or not
  */
--(bool)isLoaded;
+-(bool)isLoaded:(NSError **)errPtr;
 /*!
     @brief Returns the loaded RTP capabilities of the device
     @returns Device's RTP capabilities
     @throws The device has not been loaded
  */
--(NSString *)getRtpCapabilities;
+-(NSString *)getRtpCapabilities:(NSError **)errPtr;
 /*!
     @brief Returns the devices sctpCapabilities
     @returns Devices SCTP Capabilities
     @throws The device has not been loaded
  */
--(NSString *)getSctpCapabilities;
+-(NSString *)getSctpCapabilities:(NSError **)errPtr;
 /*!
     @brief Returns whether the device can produce media of the given kind
     @discussion This depends on the media codecs enabled in the mediasoup router and the media capabilities of libwebrtc
     @return Whether the device can produce the given media type or not
  */
--(bool)canProduce:(NSString *)kind;
+-(bool)canProduce:(NSString *)kind error:(NSError **)errPtr;
 /*!
     @brief Creates a new WebRTC transport to send media
     @discussion The transport must be previously created in the mediasoup router
