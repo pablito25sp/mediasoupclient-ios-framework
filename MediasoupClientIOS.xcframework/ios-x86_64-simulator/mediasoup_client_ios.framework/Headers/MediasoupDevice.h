@@ -16,7 +16,9 @@
 
 enum {
   NativeDeviceDisposedError = 1,
-  NotLoadedError = 1
+  NotLoadedError = 2,
+  LoadError = 3,
+  RuntimeError = 4
 };
 
 @interface MediasoupDevice : NSObject
