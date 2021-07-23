@@ -34,12 +34,12 @@ enum {
     @discussion This method takes the RTP capabilities of the mediasoup router and works out what media codecs to use etc.
     @param routerRtpCapabilities mediasoup router RTP capabilities
  */
--(bool)load:(NSString *)routerRtpCapabilities error:(NSError **)errPtr;
+-(BOOL)load:(NSString *)routerRtpCapabilities error:(NSError **)errPtr;
 /*!
     @brief Checks whether the device has been loaded
     @return Whether the device has been loaded or not
  */
--(bool)isLoaded:(NSError **)errPtr;
+-(BOOL)isLoaded:(NSError **)errPtr;
 /*!
     @brief Returns the loaded RTP capabilities of the device
     @returns Device's RTP capabilities
@@ -57,7 +57,7 @@ enum {
     @discussion This depends on the media codecs enabled in the mediasoup router and the media capabilities of libwebrtc
     @return Whether the device can produce the given media type or not
  */
--(bool)canProduce:(NSString *)kind error:(NSError **)errPtr;
+-(BOOL)canProduce:(NSString *)kind error:(NSError **)errPtr;
 /*!
     @brief Creates a new WebRTC transport to send media
     @discussion The transport must be previously created in the mediasoup router
