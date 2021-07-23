@@ -39,7 +39,7 @@ enum {
     @brief Checks whether the device has been loaded
     @return Whether the device has been loaded or not
  */
--(BOOL)isLoaded:(NSError **)errPtr;
+-(bool)isLoaded;
 /*!
     @brief Returns the loaded RTP capabilities of the device
     @returns Device's RTP capabilities
@@ -57,7 +57,7 @@ enum {
     @discussion This depends on the media codecs enabled in the mediasoup router and the media capabilities of libwebrtc
     @return Whether the device can produce the given media type or not
  */
--(BOOL)canProduce:(NSString *)kind error:(NSError **)errPtr;
+-(bool)canProduce:(NSString *)kind;
 /*!
     @brief Creates a new WebRTC transport to send media
     @discussion The transport must be previously created in the mediasoup router
