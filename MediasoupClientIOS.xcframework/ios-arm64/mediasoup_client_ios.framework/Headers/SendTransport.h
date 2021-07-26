@@ -28,7 +28,7 @@
     @param codecOptions Per codec specific options
     @return Producer
  */
--(Producer *)produce:(id<ProducerListener>)listener track:(RTCMediaStreamTrack *)track encodings:(NSArray *)encodings codecOptions:(NSString *)codecOptions;
+-(Producer *)produce:(id<ProducerListener>)listener track:(RTCMediaStreamTrack *)track encodings:(NSArray *)encodings codecOptions:(NSString *)codecOptions error:(NSError **)errPtr;
 /*!
    @brief Instructs the transport to send an audio or video track to the mediasoup router
    @param listener ProducerListener delegate
@@ -38,7 +38,7 @@
    @param appData Custom application data
    @return Producer
 */
--(Producer *)produce:(id<ProducerListener>)listener track:(RTCMediaStreamTrack *)track encodings:(NSArray *)encodings codecOptions:(NSString *)codecOptions appData:(NSString *)appData;
+-(Producer *)produce:(id<ProducerListener>)listener track:(RTCMediaStreamTrack *)track encodings:(NSArray *)encodings codecOptions:(NSString *)codecOptions appData:(NSString *)appData error:(NSError **)errPtr;
 
 @end
 

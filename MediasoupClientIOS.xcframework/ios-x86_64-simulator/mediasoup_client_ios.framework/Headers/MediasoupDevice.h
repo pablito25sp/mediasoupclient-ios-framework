@@ -14,13 +14,6 @@
 #ifndef MediasoupDevice_h
 #define MediasoupDevice_h
 
-enum {
-  NativeDeviceDisposedError = 1,
-  NotLoadedError = 2,
-  LoadError = 3,
-  RuntimeError = 4
-};
-
 @interface MediasoupDevice : NSObject
 /*! @brief libmediasoupclient native device object */
 @property(nonatomic, strong) NSValue* _nativeDevice;

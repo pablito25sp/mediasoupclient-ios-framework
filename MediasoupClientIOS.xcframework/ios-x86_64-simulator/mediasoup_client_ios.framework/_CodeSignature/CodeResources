@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/MediasoupDevice.h</key>
 		<data>
-		04gKqD5WatIr/4grn0QyWijxZhY=
+		qCS0sOv1y29pVCssuZV0WYke+wU=
 		</data>
 		<key>Headers/MediasoupLogger.h</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Headers/RecvTransport.h</key>
 		<data>
-		/JEB/J6KE9bwyo1/eux5RQ/4Wrc=
+		jEm5HFhodvcDyD3Nk/nPDSv/4jo=
 		</data>
 		<key>Headers/SendTransport.h</key>
 		<data>
-		KD65ze19S1KIIplf7BcWKijBwPI=
+		XLNayFVl54sQeIDvs0kN+hBqLQA=
 		</data>
 		<key>Headers/Transport.h</key>
 		<data>
@@ -2114,7 +2114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r+HpCpFWsCn6yR7lUyPo2i9CpvA=
+		g2iOXVFh9O7nkfmG0gQUK47HqNM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2204,7 +2204,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YnZbY8jVU50USSaJ8gYx6FB7EnMBmYm8HrEa1KJGMWc=
+			9+pK2ccoRU+pKB6UmzZdIhFeKRVqrgYITt5ZGkjpSZM=
 			</data>
 		</dict>
 		<key>Headers/MediasoupLogger.h</key>
@@ -2267,14 +2267,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dqf7hQRbNXYrcFQ0Zyvbp/VCTTWC9+p3CXAmo9T44qA=
+			fOfTuWut6KbVkxlO2obHryhrCkWBMqg9kx7PkHvSTkY=
 			</data>
 		</dict>
 		<key>Headers/SendTransport.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JhPDI8/bi09rQxhqswwBimYSu8GoXnzeOeQdLJsYNL0=
+			M3/lNrkUDl3eiQhWz8XbXlF3m6l/duTvD6kr3ZB9F58=
 			</data>
 		</dict>
 		<key>Headers/Transport.h</key>
