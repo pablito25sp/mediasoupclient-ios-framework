@@ -54,9 +54,9 @@
 
 /*!
     @brief Executed when the transport this consumer belongs to is closed for whatever reason. The consumer itself is also closed
-    @param consumer The consumer instance executing this method
+    @param consumerId The consumer id of the consumer instance executing this method
  */
--(void)onTransportClose:(Consumer *)consumer;
+-(void)onTransportClose:(NSString *)consumerId;
 
 @end
 
