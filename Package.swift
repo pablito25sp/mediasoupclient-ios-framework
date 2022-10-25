@@ -12,8 +12,8 @@ let package = Package(
   dependencies: [],
   targets: [
       .binaryTarget(
-          name: "MediasoupClientIOS",
-          path: "MediasoupClientIOS.xcframework"
+        name: "MediasoupClientIOS",
+        path: "MediasoupClientIOS.xcframework"
       )
   ]
 )
